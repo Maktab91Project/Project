@@ -7,22 +7,23 @@ using System.Threading.Tasks;
 
 namespace AppCore.Entity
 {
-    public class SubService
+    public class ExpertSubServices
     {
         #region Property
         public int Id { get; set; }
-        public string Name { get; set; }
-        public float Price { get; set; }
 
-        [ForeignKey("MainService")]
-        public int? MainServiceId { get; set; }
+        [ForeignKey("Expert")]
+        public int? ExpertId { get; set; }
+
+
+        [ForeignKey("SubService")]
+        public int? SubServiceId { get; set; }
         #endregion
 
 
-
         #region Navigation Property
-        public List<ExpertSubServices> Skills { get; set; }
-        public MainService MainService { get; set; }
+        public SubService SubService { get; set; }
+        public Expert? Expert { get; set; }
         #endregion
 
     }
