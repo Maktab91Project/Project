@@ -1,0 +1,97 @@
+﻿@model AppCore.Entity.Customer
+
+<link rel="stylesheet" href="css/site.css">
+<!-- start banner Area -->
+<section class="banner-area relative" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Login/Signup
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="category.html"> Login/Signup</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+<!-- Login Section -->
+<section class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <h2 class="mb-4">Sign Up To JobBoard</h2>
+                <form action="#" class="p-4 border rounded">
+                    <div class="row form-group">
+                        <div class="col-md-6 col-sm-12 col-12 mb-3 mb-md-0">
+                            <label class="text-black" asp-for="Name">Name</label>
+                            <input asp-for="Name" type="text" id="fname" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12 mb-3 mb-md-0">
+                            <label class="text-black" asp-for="Family">Family</label>
+                            <input asp-for="Family" type="text" id="fname" class="form-control" placeholder="Family">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" asp-for="Email">Email</label>
+                            <input asp-for="Email" type="text" id="fname" class="form-control" placeholder="Email address">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" asp-for="Password">Password</label>
+                            <input asp-for="Password" type="password" id="fname" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="row form-group mb-4">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Re-Type Password</label>
+                            <input type="password" id="fname" class="form-control" placeholder="Re-type Password">
+                        </div>
+                    </div>
+                    <div class="row form-group mb-4">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" asp-for="Address">Address</label>
+                            <textarea asp-for="Address" class="form-control" placeholder="Address" rows="2"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mb-4">Log In To JobBoard</h2>
+                <form action="#" class="p-4 border rounded">
+
+                    <div class="row form-group">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Email</label>
+                            <input type="text" id="fname" class="form-control" placeholder="Email address">
+                        </div>
+                    </div>
+                    <div class="row form-group mb-4">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">Password</label>
+                            <input type="password" id="fname" class="form-control" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Login Section -->
